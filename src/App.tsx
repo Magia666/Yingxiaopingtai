@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { KPICards, CoreCharts } from "@/components/dashboard/Module1";
 import { BusinessModuleDashboard } from "@/components/dashboard/Module2";
 import { AlertsCenter } from "@/components/dashboard/Module3";
@@ -51,7 +51,7 @@ function Dashboard() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-slate-50 font-sans">
         {/* Main Content Area */}
         <main className="max-w-[1920px] mx-auto w-full">
@@ -65,6 +65,6 @@ export default function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
